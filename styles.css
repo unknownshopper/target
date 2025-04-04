@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Update body max-width and padding */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Update header padding */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+    .company-name {
+        font-size: 2em;
+    }
+
+    .company-nav ul {
+        padding: 10px;
+    }
+
+    .company-nav a {
+        padding: 12px 15px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .service-summary {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+    }
+}
+
+/* Add extra small device support */
+@media screen and (max-width: 480px) {
+    .company-name {
+        font-size: 1.8em;
+    }
+
+    .company-nav img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .company-nav .kro-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .company-nav span {
+        font-size: 1em;
+    }
+}
+
+/* Add this after the company-logo class */
+.company-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.kro-logo {
+    filter: invert(1);
+    /* width: 80px; 
+    height: 80px;  */
+}
+
+.company-name {
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+.service-summary {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.service-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+}
+
+
+/* Add these styles for the index page */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #2c3e50;
+}
+
+/* Update the company navigation styles */
+.company-nav ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.company-nav li {
+    margin-bottom: 20px;
+}
+
+.company-nav a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-nav a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateX(10px);
+}
+
+.company-nav img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+/* Add this after the company-nav img styles */
+.company-nav .kro-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.company-nav span {
+    font-size: 1.2em;
+}
+
+
+/* Add after header styles */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #f8f9fa;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.home-button::before {
+    content: "⌂";
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-button::before {
+    content: "⌂";
+    font-size: 1.2em;
+}
+
+.nav-logo {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Special case for company logos in navbar */
+.nav-logo.aka-logo,
+.nav-logo.ccg-logo,
+.nav-logo.kar-logo,
+.nav-logo.kro-logo {
+    width: 180px;
+    height: auto;
+}
