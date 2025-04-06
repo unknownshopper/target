@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kronos</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -12,39 +13,66 @@
             <a href="index.html" class="home-button">Home</a>
         </div>
         <div class="nav-right">
-            <img src="img/kro.webp" alt="Kronos Logo" class="nav-logo kro-logo">
+            <img src="img/kro.webp" alt="Kronos Logo" class="kro-logo" width="60px">
         </div>
     </nav>
     <header>
         <h1 class="company-name">Kronos Tactical</h1>
     </header>
+
     <section class="service-summary">
         <h2>Resumen de Servicios</h2>
-        <p>Kronos Tactical | Tecnología para la aplicación de la ley y la prevención del delito.</p>
+        <p>Soluciones tácticas y estratégicas para seguridad física y protección personal.</p>
     </section>
 
     <section class="services-list">
         <h2>Nuestros Servicios</h2>
-        <div class="service-item">
-            <h3>RemotePak</h3>
-            <p>Es una plataforma de software de comando, control y análisis de múltiples sensores en tiempo real que permite la operación remota segura de sensores conectados y dispositivos de vigilancia.</p>
-        </div>
+        <form id="serviceForm">
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Remotek">
+                        <h3>RemoTek</h3>
+                    </div>
+                    <p>Plataforma de investigación y análisis de señales entranrtes y salientes en una locación establecida</p>
+                </label>
+            </div>
 
-        <div class="service-item">
-            <h3>BakPak</h3>
-            <p>Es una unidad de mochila táctica para la identificación y ubicación de dispositivos celulares.</p>
-        </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Fixpak">
+                        <h3>FixPak</h3>
+                    </div>
+                    <p>Dispositivo fijo de investigación y análisis de señales entranrtes y salientes en una locación establecida.</p>
+                </label>
+            </div>
 
-        <div class="service-item">
-            <h3>MovPak</h3>
-            <p>La identificación y localización de dispositivos móviles, especialmente en escenarios urbanos densos donde las redes móviles ocupan la mayor parte del espectro de frecuencia asignado, se está volviendo cada vez más desafiante.</p>
-        </div>
-        <div class="service-item">
-            <h3>Drone Surveillance</h3>
-            <p>Nuestra plataforma de inteligencia y correlación de datos nos proporciona información de inmediato para una intervención oportuna.</p>
-        </div>
-
-
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Movpak">
+                        <h3>MovPak</h3>
+                    </div>
+                   
+                    <p>Dispositivo vehicular de investigación y análisis de señales entranrtes y salientes en una locación establecida.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header"> 
+                        <input type="checkbox" name="services" value="Bakpak">
+                        <h3>BakPak</h3>
+                    </div>
+                    
+                    <p>Dispositivo portátil de investigación y análisis de señales entranrtes y salientes en una locación establecida.</p>
+                </label>
+            </div>
+            <a href="selected-services.html" class="submit-services">Ver Servicios Seleccionados</a>            
+        </form>
     </section>
+    <footer>
+        <p>Powered by The Unknown Shopper &copy; 2025.</p>
+    </footer>
 </body>
 </html>

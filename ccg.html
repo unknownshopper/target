@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CCGlobal</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -12,49 +13,82 @@
             <a href="index.html" class="home-button">Home</a>
         </div>
         <div class="nav-right">
-            <img src="img/ccg.png" alt="CCGlobal Logo" class="nav-logo ccg-logo">
+            <img src="img/ccg.png" width="100px" alt="CCGlobal Logo">
         </div>
     </nav>
     <header>
-      
         <h1 class="company-name">CCGlobal</h1>
     </header>
 
     <section class="service-summary">
         <h2>Resumen de Servicios</h2>
-        <p>CCGlobal | Gestión Documental y Procesos.</p>
+        <p>Especialistas en ciberseguridad y protección de datos empresariales a nivel global.</p>
     </section>
 
     <section class="services-list">
         <h2>Nuestros Servicios</h2>
-        <div class="service-item">
-            <h3>Digitalización</h3>
-            <p>CCGLOBAL ofrece la captura de imágenes tanto en su Centro de Procesamiento de Datos especializado, como a través de la implementación en las oficinas de los clientes de su plataforma CCGLOBAL PhyScan.</p>
-        </div>
+        <form id="serviceForm">
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Control de Acceso">
+                        <h3>Reconocimiento Facial y Biométricos</h3>
+                    </div>                  
+                    <p>Permite la comparación de una muestra en vivo frente a muchas plantillas biométricas existentes para buscar un registro de un individuo particular y verificar su identidad</p>
+                </label>
+            </div>
 
-        <div class="service-item">
-            <h3>BPO – Business Process Outsourcing</h3>
-            <p>La Externalización de Procesos de Negocio o BPO (Business Process Outsourcing) ofrece beneficios sustanciales a las empresas.</p>
-        </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Videovigilancia">
+                        <h3>ALPR/ANPR</h3>
+                    </div>
+                    <p>El reconocimiento automático de matrículas es un método de vigilancia y control de accesos que utiliza el reconocimiento óptico de caracteres en imágenes para leer las matrículas de los vehículos.</p>
+                </label>
+            </div>
 
-        <div class="service-item">
-            <h3>RPA – Robotic Process Automation</h3>
-            <p>Los Robots Software (tecnología conocida también como RPA o Robotic Process Automation) son programas que controlan diferentes aplicaciones con el objetivo de automatizar procesos de negocio.</p>
-        </div>
-
-        <div class="service-item">
-            <h3>PhyBox: Administración y Custodia de Archivos</h3>
-            <p>PhyBox brinda una solución integral de almacenamiento, custodia, administración y consulta de documentos físicos en áreas especializadas.</p>
-        </div>
-        <div class="service-item">
-            <h3>Documento Electrónico</h3>
-            <p>Un documento electrónico puede provenir de la digitalización o escaneo de un documento físico, o bien ser originado electrónicamente.</p>
-        </div>
-        <div class="service-item">
-            <h3>Case Management y BPM – Business Process Management</h3>
-            <p>Rediseño, automatización y optimización continua de procesos de negocio y administración de flujos de trabajo (Workflow).</p>
-        </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Detección de Dispositivos Móviles</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Fusión de Datos</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Investigación en Redes Sociales</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Monitoreo de Vehículos Y Agentes en Campo</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <a href="selected-services.html" class="submit-services">Ver Servicios Seleccionados</a>
+        </form>
     </section>
-    
+    <footer>
+        <p>Powered by The Unknown Shopper &copy; 2025.</p>
+    </footer>
 </body>
 </html>

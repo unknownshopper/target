@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karidean</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -12,7 +13,7 @@
             <a href="index.html" class="home-button">Home</a>
         </div>
         <div class="nav-right">
-            <img src="img/kar.png" alt="Karidean Logo" class="nav-logo kar-logo">
+            <img src="img/kar.png" alt="Karidean Logo" width="100px">
         </div>
     </nav>
     <!-- Remove the logo from header -->
@@ -27,22 +28,69 @@
 
     <section class="services-list">
         <h2>Nuestros Servicios</h2>
-        <div class="service-item">
-            <h3>VIGILANCIA</h3>
-            <p>CCTV Y Analíticos.</p>
-        </div>
+        <form id="serviceForm">
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Control de Acceso">
+                        <h3>Reconocimiento Facial y Biométricos</h3>
+                    </div>
+                    <p>Permite la comparación de una muestra en vivo frente a muchas plantillas biométricas existentes para buscar un registro de un individuo particular y verificar su identidad</p>
+                </label>
+            </div>
 
-        <div class="service-item">
-            <h3>Comunicaciones Seguras</h3>
-            <p>Cifrado y control del ciber espacio.</p>
-        </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Videovigilancia">
+                        <h3>ALPR/ANPR</h3>
+                    </div>
+                    <p>El reconocimiento automático de matrículas es un método de vigilancia y control de accesos que utiliza el reconocimiento óptico de caracteres en imágenes para leer las matrículas de los vehículos.</p>
+                </label>
+            </div>
 
-        <div class="service-item">
-            <h3>Prevención del delito</h3>
-            <p>Detección patrones de conducta en el manejo de automóviles y modo peatonal .</p>
-        </div>
-
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Detección de Dispositivos Móviles</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Fusión de Datos</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Investigación en Redes Sociales</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <div class="service-item">
+                <label class="service-label">
+                    <div class="service-header">
+                        <input type="checkbox" name="services" value="Alarmas">
+                        <h3>Monitoreo de Vehículos Y Agentes en Campo</h3>
+                    </div>
+                    <p>Procesamiento de CDR'S; Se crean gráficos de vínculos con análisis de CDR; A partir de los datos que contengan campos de fecha se pueden crear Líneas de Tiempo e Histogramas.</p>
+                </label>
+            </div>
+            <a href="selected-services.html" class="submit-services">Ver Servicios Seleccionados</a>
+        </form>
     </section>
+    <footer>
+        <p>Powered by The Unknown Shopper &copy; 2025.</p>
+    </footer>
     
 </body>
 </html>
