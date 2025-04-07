@@ -575,3 +575,109 @@ h1 {
 .service-header h3 {
     margin: 0;
 }
+
+.main-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    padding: 0 20px;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 40px;
+}
+
+.footer-tagline {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Mejora en la navegación de empresas */
+.company-nav a {
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.company-nav a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.document-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.document-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logos-section {
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.services-document {
+    padding: 20px 0;
+    margin: 30px 0;
+}
+
+.document-footer {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.signatures-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.signature-line {
+    text-align: center;
+    border-top: 1px solid #000;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.signature-line span {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Actualización del estilo de los servicios seleccionados */
+.service-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.service-item h3 {
+    color: #2c3e50;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
